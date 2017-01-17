@@ -68,8 +68,6 @@ def async_setup(hass, config):
     hass.services.async_register(DOMAIN, 'arm', arm_blink)
     hass.services.async_register(DOMAIN, 'disarm', disarm_blink)
 
-    return blink.logged_in
-
 
 class Blink4Home(object):
     """Blink4home api."""
